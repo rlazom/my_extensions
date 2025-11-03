@@ -2,7 +2,7 @@ import 'package:flutter/material.dart' show BuildContext, Theme, ThemeData, Size
 
 abstract class BaseLocalizations {
   String translate(String key, {String param, String? defaultValue});
-  Locale get locale;
+  late Locale locale;
 }
 
 extension BuildContextX on BuildContext {

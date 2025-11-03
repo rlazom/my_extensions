@@ -1,4 +1,4 @@
-library my_extensions;
+library;
 
 export 'src/extensions/context_extensions.dart';
 export 'src/extensions/date_time_extensions.dart';

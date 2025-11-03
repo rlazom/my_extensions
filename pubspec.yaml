@@ -1,7 +1,6 @@
 name: my_extensions
 description: "A personalized Flutter package with useful extensions."
-version: 0.0.1
-homepage:
+version: 0.0.2
 
 environment:
   sdk: ^3.9.2
