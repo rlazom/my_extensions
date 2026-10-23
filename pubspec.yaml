@@ -1,22 +1,22 @@
 name: my_extensions
 description: "A personalized Flutter package with useful extensions."
-version: 0.0.2
+version: 0.0.3
 
 environment:
-  sdk: ^3.9.2
-  flutter: ">=1.17.0"
+  sdk: ^3.11.0
+  flutter: 3.47.6
 
 dependencies:
   flutter:
     sdk: flutter
 
-  path: ^1.9.0
-  intl: ^0.20.2
+  path: ^1.9.1
+  intl: ^0.20.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

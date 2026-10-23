@@ -1,9 +1,10 @@
-import 'package:flutter/material.dart' show BuildContext, Theme, ThemeData, Size, Orientation, MediaQuery, Locale;
+import 'package:flutter/material.dart' show BuildContext, Theme, ThemeData, Size, Orientation, MediaQuery;
+// import 'package:flutter/material.dart' show BuildContext, Theme, ThemeData, Size, Orientation, MediaQuery, Locale;
 
-abstract class BaseLocalizations {
-  String translate(String key, {String param, String? defaultValue});
-  late Locale locale;
-}
+// abstract class BaseLocalizations {
+//   String translate(String key, {String param, String? defaultValue});
+//   late Locale locale;
+// }
 
 extension BuildContextX on BuildContext {
   ThemeData get theme => Theme.of(this);
@@ -38,21 +39,21 @@ extension BuildContextX on BuildContext {
   // }
 
   /// Métodos de localización
-  static BaseLocalizations? _localizations;
+  // static BaseLocalizations? _localizations;
+  //
+  // static void configure(BaseLocalizations localizations) {
+  //   _localizations = localizations;
+  // }
 
-  static void configure(BaseLocalizations localizations) {
-    _localizations = localizations;
-  }
-
-  String translate(String key, {String param = '', String? defaultValue}) {
-    assert(_localizations != null,
-    'BuildContextX not configured. Call BuildContextX.configure() in your app initialization.');
-    return _localizations!.translate(key, param: param, defaultValue: defaultValue);
-  }
-
-  String get localeLanguageCode {
-    assert(_localizations != null,
-    'BuildContextX not configured. Call BuildContextX.configure() in your app initialization.');
-    return _localizations!.locale.languageCode;
-  }
+  // String translate(String key, {String param = '', String? defaultValue}) {
+  //   assert(_localizations != null,
+  //   'BuildContextX not configured. Call BuildContextX.configure() in your app initialization.');
+  //   return _localizations!.translate(key, param: param, defaultValue: defaultValue);
+  // }
+  //
+  // String get localeLanguageCode {
+  //   assert(_localizations != null,
+  //   'BuildContextX not configured. Call BuildContextX.configure() in your app initialization.');
+  //   return _localizations!.locale.languageCode;
+  // }
 }
